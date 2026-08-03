@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fale Conosco | DSE Group</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ==============================
+       PÁGINA FALE CONOSCO
+    ============================== */
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7f9;
+      color: #07192d;
+    }
+
+    .contato-header {
+      background: #ffffff;
+      padding: 15px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .contato-header img {
+      height: 95px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .voltar-site {
+      text-decoration: none;
+      color: #07192d;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .voltar-site:hover {
+      color: #12a9c7;
+    }
+
+    .contato-hero {
+      background: #07192d;
+      color: white;
+      padding: 65px 7%;
+    }
+
+    .contato-hero span {
+      color: #28c5df;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .contato-hero h1 {
+      font-size: 46px;
+      margin: 12px 0;
+    }
+
+    .contato-hero p {
+      max-width: 650px;
+      line-height: 1.7;
+      color: #d8e2ea;
+      font-size: 17px;
+    }
+
+    .contato-area {
+      padding: 65px 7%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .dados-contato h2,
+    .formulario-contato h2 {
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    .info-contato {
+      background: white;
+      padding: 22px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .info-contato strong {
+      display: block;
+      color: #12a9c7;
+      margin-bottom: 7px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .info-contato p,
+    .info-contato a {
+      margin: 0;
+      color: #07192d;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .botao-whatsapp {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 15px 28px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    .formulario-contato {
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+
+    .campo {
+      margin-bottom: 18px;
+    }
+
+    .campo label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .campo input,
+    .campo textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px;
+      border: 1px solid #d7dde2;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    .campo textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .botao-enviar {
+      width: 100%;
+      border: none;
+      background: #0b91b0;
+      color: white;
+      padding: 15px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .botao-enviar:hover {
+      background: #087a95;
+    }
+
+    .contato-footer {
+      background: #04101f;
+      color: #c8d3dd;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      .contato-area {
+        grid-template-columns: 1fr;
+      }
+
+      .contato-hero h1 {
+        font-size: 34px;
+      }
+
+      .contato-header img {
+        height: 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="contato-header">
+
+    <a href="index.html">
+      <img src="logo-dse-header.png" alt="DSE Group">
+    </a>
+    <div class="header-acoes">
+
+      <a href="index.html" class="voltar-site">
+        ← Voltar ao início
+      </a>
+    
+      <select class="seletor-idioma" onchange="window.location.href=this.value;">
+        <option value="contato.html">BR | PT</option>
+        <option value="en/contato.html">US | EN</option>
+      </select>
+    
+      <a href="#formContato" class="botao-orcamento">
+        Solicite seu Orçamento
+      </a>
+    
+    </div>
+  
+  </header>
+
+
+  <!-- APRESENTAÇÃO -->
+  <section class="contato-hero">
+
+    <span>DSE Group</span>
+
+    <h1>Fale Conosco</h1>
+
+    <p>
+      Entre em contato com nossa equipe e descubra como a DSE Group
+      pode desenvolver soluções de engenharia para o seu projeto.
+    </p>
+
+  </section>
+
+
+  <!-- CONTATO -->
+  <main class="contato-area">
+
+    <!-- INFORMAÇÕES -->
+    <section class="dados-contato">
+
+      <h2>Informações de contato</h2>
+
+      <div class="info-contato">
+        <strong>Telefone / WhatsApp</strong>
+        <p>(51) 9 9615-6929</p>
+      </div>
+
+      <div class="info-contato">
+        <strong>E-mail</strong>
+        <a href="mailto:dseengenharias@gmail.com">
+          dseengenharias@gmail.com
+        </a>
+      </div>
+
+      <div class="info-contato">
+        <strong>Atendimento</strong>
+        <p>Chapecó/SC • Vale dos Sinos/RS</p>
+      </div>
+
+      <a
+        class="botao-whatsapp"
+        href="https://wa.me/5551996156929"
+        target="_blank"
+      >
+        Falar pelo WhatsApp
+      </a>
+
+    </section>
+
+
+    <!-- FORMULÁRIO -->
+    <section class="formulario-contato">
+
+      <h2>Envie uma mensagem</h2>
+
+      <form id="formContato">
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="empresa">Empresa</label>
+          <input
+            type="text"
+            id="empresa"
+            placeholder="Nome da empresa"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            placeholder="(00) 00000-0000"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="seuemail@empresa.com"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Como podemos ajudar?</label>
+          <textarea
+            id="mensagem"
+            placeholder="Conte um pouco sobre o projeto..."
+            required
+          ></textarea>
+        </div>
+
+        <button class="botao-enviar" type="submit">
+          Enviar mensagem pelo WhatsApp
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</div>
+
+<div class="mapa">
+  <iframe
+    title="Localização da DSE Group em Chapecó"
+    src="https://www.google.com/maps?q=Rua%20Pedro%20Oliveira%20Mendes%2021D%20Chapec%C3%B3%20SC&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+
+  <!-- RODAPÉ -->
+  <footer class="contato-footer">
+    © DSE Group — Soluções em Engenharia
+  </footer>
+
+
+  <script>
+    document
+      .getElementById("formContato")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const nome =
+          document.getElementById("nome").value;
+
+        const empresa =
+          document.getElementById("empresa").value;
+
+        const telefone =
+          document.getElementById("telefone").value;
+
+        const email =
+          document.getElementById("email").value;
+
+        const mensagem =
+          document.getElementById("mensagem").value;
+
+        const texto =
+          "Olá, DSE Group!" +
+          "\n\nNome: " + nome +
+          "\nEmpresa: " + empresa +
+          "\nTelefone: " + telefone +
+          "\nE-mail: " + email +
+          "\n\nMensagem:\n" + mensagem;
+
+        const link =
+          "https://wa.me/5551996156929?text=" +
+          encodeURIComponent(texto);
+
+        window.open(link, "_blank");
+
+      });
+  </script>
+
+</body>
+</html>
